@@ -1,4 +1,4 @@
-# GitHub Repos - iOS Test App
+# iOS Test App
 
 ## Overview
 [cite_start]The idea is to build a simple scalable application around the Github API[cite: 2]. [cite_start]While the visuals were left open, the primary accent is on the application architecture, code readability, and maintainability[cite: 3]. This project demonstrates a production-ready approach, focusing on a clear separation of concerns, modern concurrency, and robust dependency injection.
