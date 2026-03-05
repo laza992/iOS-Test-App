@@ -9,4 +9,4 @@ xcuserdata/
 *.xcworkspace/xcuserdata/
 
 # Our file with token
-Secrets.xcconfig
+*.xcconfig

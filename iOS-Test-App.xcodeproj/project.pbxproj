@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9DB0F3A92F599F8B00E19E46 /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0F3A82F599F8B00E19E46 /* Secrets.xcconfig */; };
 		9DB0F3AB2F59A0C000E19E46 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9DB0F3AA2F59A0C000E19E46 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +39,7 @@
 		9DE114592F5892D700AF8164 /* Exceptions for "iOS-Test-App" folder in "iOS-Test-App" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Configuration/Info.plist,
 			);
 			target = 9DE1142D2F5892D600AF8164 /* iOS-Test-App */;
 		};
@@ -96,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				9DB0F3AA2F59A0C000E19E46 /* .gitignore */,
-				9DB0F3A82F599F8B00E19E46 /* Secrets.xcconfig */,
 				9DE114302F5892D600AF8164 /* iOS-Test-App */,
 				9DE1144A2F5892D700AF8164 /* iOS-Test-AppTests */,
 				9DE114542F5892D700AF8164 /* iOS-Test-AppUITests */,
@@ -235,7 +233,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DB0F3AB2F59A0C000E19E46 /* .gitignore in Resources */,
-				9DB0F3A92F599F8B00E19E46 /* Secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Test-App/Info.plist";
+				INFOPLIST_FILE = "iOS-Test-App/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -343,7 +340,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "iOS-Test-App/Info.plist";
+				INFOPLIST_FILE = "iOS-Test-App/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
