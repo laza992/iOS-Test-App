@@ -11,9 +11,8 @@ import SwiftUI
 final class UserReposRouter: UserReposRouterProtocol {
 
     // MARK: - Methods
-    static func createModule() -> UIViewController {
+    static func createModule(with networkService: GitHubServiceProtocol) -> UIViewController {
         let view = UserReposViewController()
-        let networkService = GitHubService() // MockGitHubService() if we want mock data
         let interactor = UserReposInteractor(networkService: networkService)
         let router = UserReposRouter()
         let presenter = UserReposPresenter(interactor: interactor, router: router)

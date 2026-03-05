@@ -44,9 +44,9 @@ final class UserReposViewController: UIViewController, UserReposViewProtocol {
         title = "Repositories"
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
+        setupTableView()
         view.addSubview(activityIndicator)
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        setupTableView()
         setupConstraints()
     }
         
