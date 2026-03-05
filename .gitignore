@@ -1,0 +1,12 @@
+# Mac files
+.DS_Store
+
+# Xcode files
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# Our file with token
+Secrets.xcconfig

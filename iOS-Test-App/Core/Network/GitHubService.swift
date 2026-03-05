@@ -53,13 +53,18 @@ final class GitHubService: GitHubServiceProtocol {
     
     // MARK: - Private
     private func fetchData<T: Decodable>(from url: URL) async throws -> T {
-        let (data, response) = try await URLSession.shared.data(from: url)
-        
+        var request = URLRequest(url: url)
+        if let token = Bundle.main.object(forInfoDictionaryKey: "GitHubToken") as? String,
+           !token.isEmpty {
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        }
+        request.setValue("application/vnd.github.v3+json", forHTTPHeaderField: "Accept")
+    
+        let (data, response) = try await URLSession.shared.data(for: request)
         guard let httpResponse = response as? HTTPURLResponse,
               (200...299).contains(httpResponse.statusCode) else {
             throw NetworkError.invalidResponse
         }
-
         do {
             let decoder = JSONDecoder()
             return try decoder.decode(T.self, from: data)
